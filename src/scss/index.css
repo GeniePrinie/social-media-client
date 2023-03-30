@@ -2,16 +2,16 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-body [data-visible="loggedIn"] {
+body [data-visible=loggedIn] {
   display: none;
 }
-body [data-visible="loggedOut"] {
+body [data-visible=loggedOut] {
   display: initial;
 }
-body.logged-in [data-visible="loggedIn"] {
+body.logged-in [data-visible=loggedIn] {
   display: initial;
 }
-body.logged-in [data-visible="loggedOut"] {
+body.logged-in [data-visible=loggedOut] {
   display: none;
 }
 body .card-header {
@@ -93,12 +93,7 @@ body .card-header + .card-footer {
 
 .profile.page .upper {
   min-height: 8rem;
-  background: linear-gradient(
-    85deg,
-    rgba(131, 58, 180, 0.5) 0%,
-    rgba(253, 29, 29, 0.5) 50%,
-    rgba(252, 176, 69, 0.5) 100%
-  );
+  background: linear-gradient(85deg, rgba(131, 58, 180, 0.5) 0%, rgba(253, 29, 29, 0.5) 50%, rgba(252, 176, 69, 0.5) 100%);
 }
 .profile.page .user {
   transform: translateY(-2.5rem);
@@ -181,10 +176,8 @@ body .card-header + .card-footer {
   }
 }
 .loader {
-  -webkit-animation: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s infinite
-    alternate strobe;
-  animation: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s infinite alternate
-    strobe;
+  -webkit-animation: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s infinite alternate strobe;
+          animation: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s infinite alternate strobe;
   margin-bottom: 1rem;
   cursor: wait;
   pointer-events: none;
@@ -192,13 +185,12 @@ body .card-header + .card-footer {
 
 .fade-in {
   -webkit-animation: 0.4s ease-in strobeEnd;
-  animation: 0.4s ease-in strobeEnd;
+          animation: 0.4s ease-in strobeEnd;
 }
 
-header,
-footer {
+header, footer {
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   background: rgba(0, 0, 0, 0.1);
 }
 
@@ -208,4 +200,5 @@ header {
 
 footer {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-} /*# sourceMappingURL=index.css.map */
+  z-index: 12;
+}/*# sourceMappingURL=index.css.map */
