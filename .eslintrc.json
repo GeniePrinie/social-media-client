@@ -19,6 +19,6 @@
   },
   "rules": {},
   "globals": {
-    "global": "on"
+    "global": "readonly"
   }
 }
